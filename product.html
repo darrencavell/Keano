@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keano</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="assets/logo-keano-favicon-01.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="keano uk-container-expand" uk-scrollspy="cls:uk-animation-scale-up; delay:70;repeat:true; uk-animation-reverse">
+		<div class="uk-padding-small uk-padding-remove-bottom" >
+			<a href="home.html"><img class="uk-align-center uk-margin-remove-bottom" src="assets/logo-header.png" width="200px" height="200px"></a>
+		</div>
+	</div>
+	<div class="uk-navbar-container uk-navbar-sticky" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; animation: uk-animation-slide-top" style="background-color: white">
+		<div class="uk-container">
+			<nav  class="uk-navbar-container" uk-navbar style="background-color: white">
+					<div class="logo uk-navbar-left" style="visibility: hidden;">
+						<a href="home.html" class="uk-navbar-item uk-logo uk-navbar-left"><img src="assets/logo-header.png" width="100px" height="100px"></a>
+					</div>
+
+					<div class="uk-navbar-center" >
+						<ul class="uk-navbar-nav ">
+							<li class="uk-active"><a href="home.html"><button class="uk-button uk-button-text">Home</button></a></li>
+							<li><a href="product.html"><button class="uk-button uk-button-text">Product</button></a></li>
+							<li><a href="about-us.html"><button class="uk-button uk-button-text">About Us</button></a></li>
+							<li><a href="contact-us.html"><button class="uk-button uk-button-text">Contact Us</button></a></li>
+						</ul>
+					</div>
+			</nav>
+		</div>
+		<div><hr class="uk-margin-remove uk-padding-remove"></div>
+	</div>
+
+
+	<div class="uk-container-expand">
+		<div style="height: 800px; background-image: url('assets/img2.jpg');background-attachment: fixed; background-position: center; background-repeat: no-repeat;background-size: cover;" uk-parallax="bgy: -200";>
+				<!-- <img src="assets/img2.jpg"> -->
+		</div>
+
+		<div class="uk-flex uk-flex-center uk-padding">
+		    <div class="uk-padding-remove" uk-toggle="target: #modal-1">
+		    	<img src="assets/product2.png" class="hover" height="400px" width="400px">
+		    	<h4 class="uk-text-center uk-margin-remove">Lacertus Palma</h4>
+		    </div>
+		    <div class="uk-padding-remove" uk-toggle="target: #modal-2">
+				<img src="assets/product3.png" class="hover" height="400px" width="400px">
+		    	<h4 class="uk-text-center uk-margin-remove">Saccus Viscer II</h4>
+		    </div>
+		    <div class="uk-padding-remove" uk-toggle="target: #modal-3">
+		    	<img src="assets/product4.png" class="hover" height="400px" width="400px">
+		    	<h4 class="uk-text-center uk-margin-remove">Radix Omega</h4>
+		    </div>
+		</div>
+	</div>
+
+	<div id="modal-1" uk-modal>
+	    <div class="uk-modal-dialog uk-modal-body">
+	    	<img src="assets/product2.png" class="hover" height="400px" width="400px">
+	    	<button class=" uk-button uk-button-default closeImg" uk-toggle="target:#modal-1">
+	    		X
+	    	</button>
+	    	<div class="content">
+		    	<h1>Lacertus Palma</h1>
+		    	<p class="uk-text-justify">The latest Lacertus Series, originates from British Military back in 1973, now brought to you as a classical delicacy that will make your hand gleam as radiant as a crown.</p>
+	    	</div>
+	    </div>
+	</div>
+
+	<div id="modal-2" uk-modal>
+	    <div class="uk-modal-dialog uk-modal-body">
+	    	<img src="assets/product3.png" class="hover" height="400px" width="400px">
+	    	<button class=" uk-button uk-button-default closeImg" uk-toggle="target:#modal-2">
+	    		X
+	    	</button>
+	    	<div class="content">
+		    	<h1>Saccus Viscer II</h1>
+		    	<p class="uk-text-justify">The second series of Viscer comes with several adjustments to suit your demands of spatial necessity; a bigger card compartment, two tone accent on the interior, and still maintain concave accent on outer shell.</p>
+	    	</div>
+	    </div>
+	</div>
+
+	<div id="modal-3" uk-modal>
+	    <div class="uk-modal-dialog uk-modal-body">
+	    	<img src="assets/product4.png" class="hover" height="400px" width="400px">
+	    	<button class=" uk-button uk-button-default closeImg" uk-toggle="target:#modal-3">
+	    		X
+	    	</button>
+	    	<div class="content">
+		    	<h1>Radix Omega</h1>
+		    	<p class="uk-text-justify">Radix series proudly presents a hybrid of contemporary classic men sneakers. Reworking the Radix Alpha into a stronger feature with premium Brown Chromexcel leather from 100 years old tannery, the Horween Leather Company. The newly Radix Omega will bring comfort and opulence to every single step you take.</p>
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="footer uk-container-expand uk-height-max-small uk-align-center uk-text-center uk-margin-remove-top">
+		<hr class="uk-margin-remove uk-padding-remove">
+		<span class="uk-text-center uk-align-center uk-margin-small-bottom uk-text-small">© 2020 by Keano</span>
+		<hr class="uk-divider-small uk-margin-small">
+		<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+		<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+		<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+		<a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+	</div>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
